@@ -76,8 +76,8 @@ const Login = (req, res)=>{
             const NewRecord = {
                 "email": GetUser(req,res,"email"),
                 "date": (new Date ((new Date((new Date(new Date())).toISOString() )).getTime() - ((new Date()).getTimezoneOffset()*60000))).toISOString().slice(0, 19).replace('T', ' '),
-                "duration":req.body.TimeStamp,
-                "level":convertLevel(req.body.ChosenLevel)
+                "level":convertLevel(req.body.ChosenLevel),
+                "duration":req.body.TimeStamp
             };
             console.log(NewRecord);
            
