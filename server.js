@@ -3,7 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 
 const app = express();
-const port=3306;
+const PORT=process.env.PORT || 3306;
 const CRUD = require("./CRUD-Functions");
 const sql = require('./db');
 const connection = require('./db');
@@ -52,11 +52,9 @@ app.post("/FilterStats", CRUD.PullFilters);
       if(field=="name") return "Guest";
       
      };
-     .listen(process.env.PORT || port)
-   
-/*
-     app.listen(port,()=>{
-      console.log("Server is running on port"+port)
+     
+
+     app.listen(PORT,()=>{
+      console.log("Server is running on port"+PORT)
   });
 
-  */
