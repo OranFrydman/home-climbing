@@ -112,7 +112,7 @@ const Login = (req, res)=>{
             }
             console.log(data);
             console.log("pulling stats..success");
-            res.render('statistics',{
+            res.render('Statistics',{
                 myclimbs:data,
                 user: "Welcome, "+GetUser(req,res,"name")
             });
@@ -159,7 +159,7 @@ const Login = (req, res)=>{
                    return;
                }
                console.log("pulling filter stats..success")
-               res.render('statistics',{
+               res.render('Statistics',{
                    myclimbs:data,
                    user: "Welcome, "+GetUser(req,res,"name")
                })
