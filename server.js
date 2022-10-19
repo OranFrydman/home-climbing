@@ -54,5 +54,5 @@ app.post("/FilterStats", CRUD.PullFilters);
       if(field=="name") return "Guest";
       
      };
-     module.exports = {GetUser};
+
    
