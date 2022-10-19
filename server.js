@@ -3,7 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 
 const app = express();
-const port=8080;
+const port=3306;
 const CRUD = require("./CRUD-Functions");
 const sql = require('./db');
 const connection = require('./db');
