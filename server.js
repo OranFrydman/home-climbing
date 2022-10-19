@@ -33,9 +33,7 @@ app.post("/createNewClimber", CRUD.createNewClimber);
 app.post("/Login", CRUD.Login);
 app.post("/createNewRecords", CRUD.createNewRecords);
 app.post("/FilterStats", CRUD.PullFilters);
-    app.listen(port,()=>{
-        console.log("Server is running on port"+port)
-    });
+
 
     function GetUser(req,res,field){
       if (req.get("Cookie"))
@@ -54,5 +52,11 @@ app.post("/FilterStats", CRUD.PullFilters);
       if(field=="name") return "Guest";
       
      };
-
+     .listen(process.env.PORT || port)
    
+/*
+     app.listen(port,()=>{
+      console.log("Server is running on port"+port)
+  });
+
+  */
