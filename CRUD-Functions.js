@@ -3,9 +3,6 @@ var path = require('path');
 const e = require('express');
 const { appendFile } = require('fs');
 const MyServer = require('./server.js');
-const { Console } = require('console');
-
-
 
 
 const createNewClimber = (req, res)=>{
@@ -31,7 +28,7 @@ const createNewClimber = (req, res)=>{
                         return;
                     }
                     console.log("New climber created");
-                    res.render('HomePage');
+                    res.redirect('/HomePage');
                     return;
                 } )
             }

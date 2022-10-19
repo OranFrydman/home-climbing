@@ -1,13 +1,11 @@
 const path = require('path');
 const express = require("express");
 const bodyParser = require("body-parser");
-
 const app = express();
-const PORT=process.env.PORT || 3306;
+const PORT=process.env.PORT || 8080;
 const CRUD = require("./CRUD-Functions");
 const sql = require('./db');
 const connection = require('./db');
-const { send } = require('process');
 const cookieParser = require('cookie-parser')
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true
