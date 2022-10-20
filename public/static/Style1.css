@@ -343,13 +343,13 @@ padding:10px;
   50% { width: 115px; height:115px; color: blue; font-size:20px;}
   100% { width: 100px; }
 }
-
+/* Change grid color by  screen size
 @media screen and (max-width: 1000px) {
   .GridSettings {
     background:var(--FormColor2);
   }
 }
-
+*/
 .Active {
   border: blue 3px dotted; 
   border-radius: 25px;
